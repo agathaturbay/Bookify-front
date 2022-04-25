@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Cookie-Regular";
+  src: url("../../assets/Fonts/Cookie-Regular.ttf");
+}
+
+ion-item {
+  margin: 0 auto;
+  height: 50px;
+  width: 90%;
+  border: 1px solid #0f1515;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+ion-button {
+  margin-left: 175px;
+  width: 200px;
+}
+
+p {
+  text-align: center;
+  color: var(--ion-background-color);
+  font-size: 50px;
+  font-family: "Cookie-Regular";
+  margin-bottom: 30px;
+}
+
+.bg {
+  background-image: url("../../assets/magic_forest.jpg");
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.blurry {
+  width: 550px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.64);
+  backdrop-filter: blur (10px);
+  margin-left: 230px;
+  flex-direction: column;
+  color: white;
+  margin-top: 100px;
+}
+
+ion-title {
+  font-family: "Cookie-Regular";
+  font-size: 30px;
+  color: #85a59a;
+}

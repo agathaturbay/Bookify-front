@@ -1,0 +1,32 @@
+{
+  "generator-ngx-rocket": {
+    "version": "10.1.2",
+    "props": {
+      "location": "path",
+      "strict": true,
+      "skipInstall": false,
+      "skipQuickstart": false,
+      "initGit": true,
+      "usePrefix": true,
+      "appName": "Bookify",
+      "target": ["web", "cordova"],
+      "mobile": ["ios", "android"],
+      "ui": "ionic",
+      "layout": "side-menu",
+      "features": ["pwa", "auth", "lazy", "cypress"],
+      "languages": ["en-US", "pt-BR"],
+      "tools": ["prettier", "hads"],
+      "utility": ["lodash", "moment"],
+      "deploy": "none",
+      "projectName": "book",
+      "packageManager": "npm",
+      "desktop": [],
+      "pwa": true,
+      "auth": true,
+      "lazy": true,
+      "e2e": false,
+      "cypress": true,
+      "angulartics": false
+    }
+  }
+}

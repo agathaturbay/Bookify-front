@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title><span translate>Suggestions</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="bg">
+    <div class="blurry">
+      <p><span translate>Please place your suggestion here!</span></p>
+      <form id="suggestion-form" method="post" action="/sendmail" enctype="multipart/form-data">
+        <ion-item line="none">
+          <ion-label color="primary" position="floating" stacked><span translate>Name</span></ion-label>
+          <ion-input id="name" name="name" type="text" placeholder="Name" required></ion-input>
+        </ion-item>
+        <ion-item line="none">
+          <ion-label color="primary" position="floating" stacked>E-mail</ion-label>
+          <ion-input id="email" name="email" type="email" placeholder="E-mail" required></ion-input>
+        </ion-item>
+        <ion-item line="none">
+          <ion-label color="primary" position="floating" stacked><span translate>Suggestions</span></ion-label>
+          <ion-input id="message" name="message" type="text" placeholder="How can we improve?" required></ion-input>
+        </ion-item>
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit" value="submit"><span translate>Submit</span></ion-button>
+          </ion-col>
+        </ion-row>
+      </form>
+    </div>
+  </div>
+</ion-content>

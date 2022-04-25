@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <!--<ion-buttons slot="start">
+      <ion-button (click)="filterAll()">Todos</ion-button>
+      <ion-button (click)="filterRomance()">Romance</ion-button>
+      <ion-button (click)="filterPolicial()">Policial</ion-button>
+      <ion-button (click)="filterTerror()">Terror/Suspense</ion-button>
+      <ion-button (click)="filterFantasia()">Fantasia</ion-button>
+    </ion-buttons>-->
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="bg">
+    <div class="align-books">
+      <ion-col sizeLg="4.5" sizeMd="4" sizeXs="12" *ngFor="let book of books">
+        <ion-card class="ion-text-center">
+          <div class="blurry">
+            <div class="front">
+              <div ng-if="book.category == categoria">
+                <ion-grid>
+                  <ion-row class="ion-justify-content-center">
+                    <ion-img [src]="book.image"></ion-img>
+                  </ion-row>
+                </ion-grid>
+              </div>
+              <div class="back">
+                <div class="back-container">
+                  <h1>{{ book.title }}</h1>
+                  <ion-text>
+                    <p><strong>Autor</strong>: {{ book.autor }}</p>
+                    <p><strong>Sinopse</strong>: {{ book.sin }}</p>
+                    <a href="{{ book.playlist }}" class="button-playlist" target="_blank"
+                      >Clique para ir para a playlist!</a
+                    >
+                  </ion-text>
+                </div>
+              </div>
+              <ion-button
+                class="button-edit"
+                [routerDirection]="'root'"
+                [routerLink]="['/update-book', book._id]"
+                routerLinkActive="active"
+              >
+                <ion-label><ion-icon name="pencil"></ion-icon></ion-label>
+              </ion-button>
+            </div>
+          </div>
+        </ion-card>
+      </ion-col>
+    </div>
+  </div>
+</ion-content>

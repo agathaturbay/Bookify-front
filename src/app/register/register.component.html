@@ -1,0 +1,40 @@
+<ion-content>
+  <div class="bg">
+    <div class="blurry">
+      <form [formGroup]="userForm">
+        <h1>Register and enjoy!</h1>
+        <ion-item>
+          <ion-label color="primary" position="floating">Email</ion-label>
+          <ion-input type="email" required formControlName="email"></ion-input>
+        </ion-item>
+        <ion-text color="danger" hidden="userForm.controls.email.valid || userForm.controls.email.untouched">
+          <span class="ion-padding" translate>Insira um email valido</span>
+        </ion-text>
+        <ion-item>
+          <ion-label color="primary" position="floating"><span translate>Name</span></ion-label>
+          <ion-input type="text" required formControlName="name"></ion-input>
+        </ion-item>
+        <ion-text color="danger" hidden="userForm.controls.name.valid || userForm.controls.name.untouched">
+          <span class="ion-padding" translate>Name is required</span>
+        </ion-text>
+        <ion-item>
+          <ion-label color="primary" position="floating"><span translate>Password</span></ion-label>
+          <ion-input type="password" required formControlName="password"></ion-input>
+        </ion-item>
+        <ion-text color="danger" hidden="userForm.controls.password.valid || userForm.controls.password.untouched">
+          <span class="ion-padding" translate>Password is required</span>
+        </ion-text>
+        <ion-button
+          slot="end"
+          size="default"
+          type="submit"
+          color="secondary"
+          (click)="createUser()"
+          [disabled]="userForm.invalid"
+        >
+          Register
+        </ion-button>
+      </form>
+    </div>
+  </div>
+</ion-content>

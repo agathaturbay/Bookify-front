@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Cookie-Regular";
+  src: url("../../assets/Fonts/Cookie-Regular.ttf");
+}
+
+ion-img {
+  width: 150px;
+}
+
+.home-categories-prev {
+  position: absolute;
+  height: 35px;
+  padding-right: 1.3rem;
+}
+
+.home-categories-next {
+  position: absolute;
+  z-index: 30;
+  right: -6px;
+  height: 35px;
+  padding-left: 1.3rem;
+}
+
+.front ion-img {
+  width: 80%;
+  height: 200px;
+}
+
+.title-row {
+  margin-top: 25px;
+  height: 50px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: medium;
+  margin: 0.5em;
+  font-family: "Cookie-Regular";
+}
+
+.bg {
+  background-image: url("../../assets/magic_forest.jpg");
+  background-attachment: fixed;
+}
+
+.blurry {
+  background: var(--ion-background-color);
+  filter: blur (10px);
+  color: #0f1515;
+  height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 5px;
+}
+
+p {
+  font-family: "Cookie-Regular";
+  font-size: 20px;
+}
+
+.margin {
+  margin-top: 50px;
+}
+
+.button-playlist {
+  text-decoration: none;
+  background-color: var(--ion-color-primary);
+  color: white;
+  padding: 8px 30px 8px 30px;
+  border-radius: 10px;
+}
+
+.margin {
+  margin-bottom: 30px;
+}
+
+.button-edit {
+  margin-top: 50px;
+  margin-left: 270px;
+  width: 30px;
+}
+
+.filter {
+  height: 60px;
+  width: 100%;
+  display: contents;
+}
+
+.align-books {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+ion-title {
+  font-family: "Cookie-Regular";
+  font-size: 30px;
+  color: #85a59a;
+}

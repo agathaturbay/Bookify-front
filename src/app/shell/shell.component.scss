@@ -1,0 +1,33 @@
+@import "src/theme/theme-variables";
+
+@font-face {
+  font-family: "Cookie-Regular.ttf";
+  src: url("../../assets/Fonts/Cookie-Regular.ttf");
+}
+
+[ion-fixed] {
+  width: 100%;
+  height: 100%;
+}
+
+.profile {
+  background: var(--ion-color-primary);
+}
+
+.profile-icon {
+  font-size: 6rem;
+  color: var(--ion-color-primary-contrast);
+}
+
+.font {
+  font-family: "Cookie-Regular";
+  font-size: 30px;
+  margin-left: auto;
+  color: var(--ion-color-primary);
+}
+
+.war {
+  display: flex;
+  background-size: cover;
+  margin-top: -25px;
+}

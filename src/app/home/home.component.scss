@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Cookie-Regular";
+  src: url("../../assets/Fonts/Cookie-Regular.ttf");
+}
+.conteudo {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+}
+
+.bg {
+  background-image: url("../../assets/magic_forest.jpg");
+  background-size: cover;
+}
+
+p {
+  font-size: 60px;
+  color: #85a59a;
+  font-family: "Cookie-Regular";
+  margin-left: 23%;
+  margin-top: 22%;
+}
+
+ion-title {
+  font-family: "Cookie-Regular";
+  font-size: 30px;
+  color: #85a59a;
+}

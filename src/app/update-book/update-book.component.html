@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Editar Produto</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="bg">
+    <div class="blurry">
+      <p>Edite seu livro!</p>
+      <form [formGroup]="bookForm">
+        <ion-item lines="full">
+          <ion-label position="floating">Title</ion-label>
+          <ion-input type="text" required formControlName="title"></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="floating">Autor</ion-label>
+          <ion-input type="text" required formControlName="autor"></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="floating">Categoria</ion-label>
+          <ion-select interface="popover" formControlName="category">
+            <ion-select-option *ngFor="let bookCategory of bookCategories" [value]="bookCategory">
+              {{ bookCategory }}
+            </ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="floating">Playlist</ion-label>
+          <ion-input type="text" required formControlName="playlist"></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+          <ion-label position="floating">Sinopse</ion-label>
+          <ion-input type="text" required formControlName="sin"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="file" (change)="onFileSelected($event)"></ion-input>
+        </ion-item>
+
+        <ion-button class="update-button1" color="primary" slot="end" size="default" (click)="updateBook()">
+          Editar livro
+        </ion-button>
+
+        <ion-button class="update-button2" color="danger" slot="end" size="medium" (click)="cancel()">
+          Cancelar
+        </ion-button>
+      </form>
+    </div>
+  </div>
+</ion-content>
