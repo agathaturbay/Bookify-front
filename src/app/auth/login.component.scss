@@ -1,33 +1,19 @@
-@font-face {
-  font-family: "Cookie-Regular";
-  src: url("../../assets/Fonts/Cookie-Regular.ttf");
-}
+ion-content {
+  .bg {
+    background-image: url('../../assets/bg-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
 
-ion-grid,
-ion-row {
-  height: 100%;
-}
+    .login-form {
+      background-color: #D5C496;
+      width: 50vw;
+      height: 50vh;
 
-.login-background {
-  background-image: url("../../assets/bglogin.jpg");
-  background-size: cover;
-}
+      .login-buttons {
+        text-align: center;
+      }
 
-.login-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0%;
-}
-
-h1 {
-  font-family: "Cookie-Regular";
-  font-size: 80px;
-  color: #0f1515;
-}
-
-ion-button {
-  width: 455px;
-  margin-left: -15px;
+    }
+  }
 }

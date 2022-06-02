@@ -1,0 +1,53 @@
+{
+  "name": "string-capitalize",
+  "version": "1.0.1",
+  "description": "Capitalizes a string.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test-*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jxson/string-capitalize.git"
+  },
+  "keywords": [
+    "string",
+    "strings",
+    "string.js",
+    "capitalize"
+  ],
+  "author": "Jason Campbell <jason@js.la> (http://artifact.sh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jxson/string-capitalize/issues"
+  },
+  "testling": {
+    "files": "test-*.js",
+    "harness": "mocha",
+    "browsers": {
+      "ie": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "ff": [
+        24,
+        25
+      ],
+      "chrome": [
+        28,
+        29,
+        30
+      ],
+      "safari": [
+        6,
+        7
+      ]
+    }
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0"
+  }
+}

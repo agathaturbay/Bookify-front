@@ -22,7 +22,6 @@
           "options": {
             "outputPath": "www",
             "index": "src/index.html",
-            "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -38,7 +37,6 @@
               },
               "src/assets"
             ],
-            "styles": ["src/main.scss"],
             "scripts": []
           },
           "configurations": {
@@ -107,7 +105,6 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "scripts": [],
-            "styles": ["src/main.scss"],
             "assets": [
               "src/favicon.ico",
               "src/apple-touch-icon.png",
